@@ -18,6 +18,7 @@ const imports = {
   iconButton: `import SB_IconButton from "../Components/Form/SB_IconButton";`,
   submitButton: `import SB_SubmitButton from "../Components/Form/SB_SubmitButton";`,
   cancelButton: `import SB_CancelButton from "../Components/Form/SB_CancelButton";`,
+  resetButton: `import SB_ResetButton from "../Components/Form/SB_ResetButton";`,
 };
 
 export default imports;

@@ -22,6 +22,7 @@ import SB_DateTimePicker from "../Components/Form/SB_DateTimePicker";
 import SB_CopyButton from "../Components/Form/SB_CopyButton";
 import imports from "../Constants/ImportStatements";
 import usages from "../Constants/Usages";
+import SB_ResetButton from "../Components/Form/SB_ResetButton";
 
 const FormComponents = () => {
   const [username, setUsername] = useState("");
@@ -829,6 +830,39 @@ const FormComponents = () => {
 
         <pre>
           <code className="text-blue-600">{usages.cancelButton}</code>
+        </pre>
+      </div>
+      <h1 className="text-3xl font-bold mb-2 text-center">Reset Button</h1>
+      <br />
+      <div className="w-full mt-2">
+        <SB_ResetButton
+          label="Reset"
+          size="md"
+          color="blue"
+          onClick={() => console.log("Reset")}
+        />
+
+        <div className="flex flex-row justify-between">
+          <h1 className="mt-2 font-bold"> Import Statement -</h1>
+          <SB_CopyButton
+            textToCopy={imports.resetButton}
+            label="Copy"
+            copiedLabel="Copied!"
+          />
+        </div>
+
+        <h2 className="text-blue-600"> {imports.resetButton}</h2>
+        <div className="flex flex-row justify-between">
+          <h2 className=" font-bold"> Usage -</h2>
+          <SB_CopyButton
+            textToCopy={usages.resetButton}
+            label="Copy"
+            copiedLabel="Copied!"
+          />
+        </div>
+
+        <pre>
+          <code className="text-blue-600">{usages.resetButton}</code>
         </pre>
       </div>
     </div>

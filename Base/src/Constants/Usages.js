@@ -187,6 +187,14 @@ const usages = {
     disabled
     className=""
 />`,
+  resetButton: `<SB_ResetButton
+    label="Reset"
+    size="md"
+    color="blue"
+    onClick={() => console.log("Reset")}
+    disabled
+    className=""
+/>`,
 };
 
 export default usages;
