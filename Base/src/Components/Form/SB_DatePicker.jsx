@@ -10,10 +10,17 @@ const SB_DatePicker = ({
   error = "",
   disabled = false,
   className = "",
+  htmlFor,
 }) => {
   return (
     <div className={`flex flex-col ${className}`}>
-      {label && <label className="mb-1 font-medium">{label}</label>}
+      <label
+        htmlFor={htmlFor || name}
+        className="mb-1 font-semibold flex flex-start"
+      >
+        {label}
+        {required && <span className="text-red-500"> *</span>}
+      </label>
       <input
         type="date"
         value={value}

@@ -6,7 +6,7 @@ const SB_FileUploader = ({
   maxSize = 5 * 1024 * 1024, // 5 MB default max size
   required = false,
   error = "",
-  onFileSelect,
+
   className = "",
 }) => {
   const [selectedFile, setSelectedFile] = useState(null);

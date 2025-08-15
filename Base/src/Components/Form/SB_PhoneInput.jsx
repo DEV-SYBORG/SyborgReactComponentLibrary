@@ -6,6 +6,7 @@ const SB_PhoneInput = ({
   value,
   onChange,
   required = false,
+  disabled = false,
   error,
   countryCode,
   onCountryCodeChange,
@@ -54,6 +55,7 @@ const SB_PhoneInput = ({
           value={value}
           onChange={onChange}
           required={required}
+          disabled={disabled}
           placeholder={placeholder}
           className={`w-full px-3 py-2 border-t border-b border-r ${
             error ? "border-red-500" : "border-gray-300"

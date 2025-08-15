@@ -5,7 +5,8 @@ const SB_MailInput = ({
   placeholder = "Enter your email",
   value,
   onChange,
-  required = true,
+  required = false,
+  disabled = false,
   className = "",
   htmlFor,
   name = "email",
@@ -45,6 +46,7 @@ const SB_MailInput = ({
         type="email"
         placeholder={placeholder}
         value={value}
+        disabled={disabled}
         onChange={(e) => onChange(e.target.value)}
         onBlur={handleBlur}
         required={required}
