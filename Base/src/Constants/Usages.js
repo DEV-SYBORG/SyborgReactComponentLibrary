@@ -195,6 +195,71 @@ const usages = {
     disabled
     className=""
 />`,
+  loginForm: `<SB_LoginForm
+    onSubmit={handleLogin}
+    buttonLabel="Login"
+    showRememberMe={true}
+    showForgotPassword={true}
+    classname="
+/>`,
+  registrationForm: `<SB_RegistrationForm
+  onSubmit={handleRegister}
+  buttonLabel = "Register",
+  redirectText = "Already have an account?",
+  redirectLinkText = "Sign in",
+  onRedirectClick={handleRedirect}
+  className = "",
+/>`,
+  socialLoginButton: ` <SB_SocialLoginButton
+  label=""
+  provider="google"
+  onClick={() => handleSocialLogin("google")}
+  className=""
+/>`,
+  forgetPassword: ` <SB_ForgetPassword
+  placeholder=""
+  buttonLabel="Continue"
+  buttonSize="md"
+  buttonColor="blue"
+  onSubmit={handleForgotPassword}
+  classname=""
+/>`,
+  resetPassword: ` <SB_ForgetPassword
+  placeholder=""
+  buttonLabel="Reset Password"
+  buttonSize="md"
+  buttonColor="blue"
+  onSubmit={handleResetPassword}
+  classname=""
+/>`,
+  otpInput: `<SB_OtpInput
+  length={6}
+  onSubmit={handleOtpSubmit}
+  buttonLabel="Submit"
+  buttonSize="md"
+  buttonColor="blue"
+  className=""
+/>`,
+  fab: ` <SB_Fab
+  icon={<PlusIcon className="w-6 h-6" />}
+  label=""
+  onClick={handleFabClick}
+  position="top-right"
+  size="md"
+  color="bg-green-600 hover:bg-green-700"
+  className=""
+/>`,
+  autocomplete: ` <SB_Autocomplete
+  label="Country"
+  placeholder="Search country..."
+  options={countries}
+  value={selectedCountry}
+  onSelect={(value) => setSelectedCountry(value)}
+  required
+  disabled
+  error
+  classname=""
+/>`,
 };
 
 export default usages;

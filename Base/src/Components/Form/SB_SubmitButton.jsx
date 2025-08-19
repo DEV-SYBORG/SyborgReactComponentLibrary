@@ -26,13 +26,13 @@ const SB_SubmitButton = ({
       onClick={onClick}
       disabled={disabled}
       className={`
-        rounded-lg font-semibold text-white
-        focus:ring-2 transition-all duration-200 ease-in-out shadow-md
-        disabled:opacity-50 disabled:cursor-not-allowed
-        ${sizeClasses[size]} 
-        ${colorClasses[color] || color} 
-        ${className}
-      `}
+          rounded-lg font-semibold text-white
+          focus:ring-2 transition-all duration-200 ease-in-out shadow-md
+          disabled:opacity-50 disabled:cursor-not-allowed
+          ${sizeClasses[size]} 
+          ${colorClasses[color] || color} 
+          ${className}
+        `}
     >
       {label}
     </button>

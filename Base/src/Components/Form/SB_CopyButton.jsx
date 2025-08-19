@@ -17,7 +17,7 @@ const SB_CopyButton = ({
     try {
       await navigator.clipboard.writeText(textToCopy);
       setCopied(true);
-      setTimeout(() => setCopied(false), 1500); // Reset after 1.5s
+      setTimeout(() => setCopied(false), 1500);
     } catch (err) {
       console.error("Failed to copy: ", err);
     }

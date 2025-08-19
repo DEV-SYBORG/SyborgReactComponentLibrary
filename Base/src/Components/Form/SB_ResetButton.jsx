@@ -1,11 +1,11 @@
 import React from "react";
-import { ArrowPathIcon } from "@heroicons/react/24/solid"; // Tailwind Heroicons
+import { ArrowPathIcon } from "@heroicons/react/24/solid";
 
 const SB_ResetButton = ({
   label = "Reset",
   onClick,
-  size = "md", // sm, md, lg
-  color = "gray", // gray, red, blue, green
+  size = "md",
+  color = "gray",
   icon = true,
   disabled = false,
   className = "",

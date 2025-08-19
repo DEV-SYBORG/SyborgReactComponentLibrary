@@ -19,6 +19,14 @@ const imports = {
   submitButton: `import SB_SubmitButton from "../Components/Form/SB_SubmitButton";`,
   cancelButton: `import SB_CancelButton from "../Components/Form/SB_CancelButton";`,
   resetButton: `import SB_ResetButton from "../Components/Form/SB_ResetButton";`,
+  loginForm: `import SB_LoginForm from "../Components/Form/SB_LoginForm";`,
+  registrationForm: `import SB_RegistrationForm from "../Components/Form/SB_RegistrationForm";`,
+  socialLoginButton: `import SB_SocialLoginButton from "../Components/Form/SB_SocialLoginButton";`,
+  forgetPassword: `import SB_ForgetPassword from "../Components/Form/SB_ForgetPassword";`,
+  resetPassword: `import SB_ResetPassword from "../Components/Form/SB_ResetPassword";`,
+  otpInput: `import SB_OtpInput from "../Components/Form/SB_OtpInput";`,
+  fab: `import SB_Fab from "../Components/Form/SB_Fab";`,
+  autocomplete: `import SB_Autocomplete from "../Components/Form/SB_Autocomplete";`,
 };
 
 export default imports;
