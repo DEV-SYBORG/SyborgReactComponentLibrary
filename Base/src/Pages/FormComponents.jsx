@@ -146,10 +146,23 @@ const FormComponents = () => {
   const handleRedirect = () => {
     console.log("Navigate to login page");
   };
+
   const handleSocialLogin = (provider) => {
-    console.log(`Login with ${provider}`);
-    // your auth logic here
+    if (provider === "google") {
+      window.open("https://accounts.google.com/", "_blank");
+    } else if (provider === "github") {
+      window.open("https://github.com/login", "_blank");
+    } else if (provider === "facebook") {
+      window.open("https://www.facebook.com/login", "_blank");
+    } else {
+      console.warn("Unknown provider:", provider);
+    }
   };
+
+  // const handleSocialLogin = (provider) => {
+  //   console.log(`Login with ${provider}`);
+  //   // your auth logic here
+  // };
   // const handleSocialLogin = (providerName) => {
   //   let provider;
   //   if (providerName === "google") provider = new GoogleAuthProvider();
